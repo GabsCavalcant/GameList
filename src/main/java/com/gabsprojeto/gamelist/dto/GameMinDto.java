@@ -1,6 +1,7 @@
 package com.gabsprojeto.gamelist.dto;
 
 import com.gabsprojeto.gamelist.entities.Game;
+import com.gabsprojeto.gamelist.projection.GameMinProjection;
 
 public class GameMinDto {
 
@@ -25,7 +26,14 @@ public class GameMinDto {
 		this.imgUrl = entity.getImgUrl();
 		this.shortDescription = entity.getShortDescription();
 	}
-
+public GameMinDto(GameMinProjection projection) {
+		
+		this.id = projection.getId();
+		this.title = projection.getTitle();
+		this.year = projection.getYear();
+		this.imgUrl = projection.getImgUrl();
+		this.shortDescription = projection.getShort_description();
+	}
 
 	public Long getId() {
 		return id;
