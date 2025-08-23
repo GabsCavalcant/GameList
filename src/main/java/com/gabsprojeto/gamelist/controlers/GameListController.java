@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.gabsprojeto.gamelist.dto.GameListDto;
 import com.gabsprojeto.gamelist.dto.GameMinDto;
-import com.gabsprojeto.gamelist.entities.Game;
 import com.gabsprojeto.gamelist.services.GameListService;
 import com.gabsprojeto.gamelist.services.GameService;
 
